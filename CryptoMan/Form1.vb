@@ -24,7 +24,7 @@ Public Class Form1
             Dim stored As String = txtStored.Text
             Dim matches As Boolean = Crypter.CheckPassword(pwd, stored)
             lblResult.Text = If(matches, "BRAVO! COMBACIA MINCHIA SEI BRAVO!", "NON COMBACIA UN CAZZO!")
-            lblResult.ForeColor = If(matches, Drawing.Color.Green, Drawing.Color.Red)
+            lblResult.ForeColor = If(matches, Drawing.Color.Blue, Drawing.Color.Red)
         Catch ex As Exception
             MessageBox.Show("Errore: " & ex.Message)
         End Try
